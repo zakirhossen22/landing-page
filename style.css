@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+body{
+       margin: 0;
+       padding: 0;
+       box-sizing: border-box;
+}
+
+.container{
+       max-width: 1440px;
+       position: relative;
+}
+.container1{
+       background: #FFFFFF;
+}
+.container2{
+       background: #E5E5E5;
+}
+/*---header-start*/
+ header
+{
+       position: sticky;
+       top: 0;
+       background:#de3838;
+       z-index: 1;
+       padding: 1em;
+
+}
+
+header ul{
+       display: flex;
+       align-items: center;
+       justify-content: flex-end;
+}
+nav{
+       margin-top: 3em;
+}
+
+header ul li{
+       list-style: none;
+       padding-right: 2em;
+}
+header ul li a{
+       text-decoration: none;
+       font-family: 'Roboto';
+       font-weight: 500;
+       font-size: 16px;
+       color: #fff;
+}
+header ul li a:hover{
+       border-bottom: 4px solid blue;
+}
+/*---header-end*/
+
+
+
+       /*---box-start*/
+       .box{
+              display: grid;
+              grid-template-columns: repeat(2,1fr);
+              margin-left: 5em;
+       }
+
+       .box .textbx{
+              transform: translateY(17%);
+       }
+        h1{
+              font-size: 80px;
+              font-family:'Bebas Neue',cursive;
+              font-weight: 700;
+       }
+       
+       p{
+              font-family: 'Roboto',sans-serif;
+              font-size: 16px;
+              font-weight: 400;
+             padding-bottom: 10px;
+             margin-top: -28px;
+       }
+
+       .box .textbx btn{
+              outline: none;
+              background: #FF8063;
+              padding: 14px 36px;
+              border-radius: 6px;
+              font-family: 'Roboto',sans-serif;
+              font-weight: 500;
+              font-size: 16px;
+              cursor: pointer;   
+              transition: 0.5s;   
+       }
+       btn .fa{
+              margin-right: 10px;
+       }
+      
+       .circle {
+              position: relative;
+              left: -6em;
+              top: -3em;
+          }
+
+          img.main {
+              width: 450px;
+              height: auto;
+          }
+       /*---box-end*--*/
+
+
+
+
+       /*---content-start---*/
+       .content .imgbox img{
+              height:60%;
+              width: 100%;
+       }
+       .agency{
+              display: grid;
+              grid-template-columns: repeat(3,1fr);
+              margin-left: 2em;
+              grid-gap:1em;
+              margin-top:-2em;
+              padding-bottom: 5em;
+              padding-top: 5em;
+       }
+
+       .agency .content{
+              background: #FFFFFF;
+              border-radius: 20px;
+              padding: 30px;
+       }
+       h2{
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              text-align: center;
+              padding-top: 15px;
+              font-size: 48px;
+              font-family:'Bebas Neue',cursive;
+              font-weight: 700;
+       }
+       h2 span{
+              font-size: 48px;
+              font-family:'Bebas Neue',cursive;
+              font-weight: 700;
+              color:#FF8063;
+       }
+       .contentbx h3{
+              margin-left: 1em;
+              font-family: 'Roboto',sans-serif;
+              font-weight: 700;
+       }
+       .contentbx p{
+              margin-top: 1em;
+              margin-left: 1em;
+              font-family:'Roboto',sans-serif;
+              font-size: 16px;
+              font-weight: 400;
+       }
+       /*----content-start---*/
+
+
+
+
+       /*----chat-start----*/
+       .chat{
+              display: flex;
+              background:linear-gradient(138.38deg, #5D69E9 -7.79%, #4225B6 98.72%);
+              border-radius: 30px;
+              align-items: center;
+              justify-content: space-around;
+              margin-top: 5em;
+              width: 906px;
+              height: 225px;
+              margin-left: 14em;
+       }
+
+       .chat h1{
+              font-family: Bebas Neue;
+              font-size: 64px;
+              font-weight: 700;
+              color: #FFFFFF;
+       }
+       .chat btn{
+              outline: none;
+              background: #FF8063;
+              padding: 14px 36px;
+              border-radius: 6px;
+              font-family: 'Roboto',sans-serif;
+              font-weight: 500;
+              font-size: 16px;
+              cursor: pointer;   
+              transition: 0.5s;   
+       }
+       /*-----chat-end---*/
+
+
+
+       /*---footer-start--*/
+       .social{
+              display: flex;
+       }
+              
+       .footer{
+             display: grid;
+             grid-template-rows: repeat(2,1fr);
+             justify-items: center;
+             margin-top: 5em;
+       }
+
+       .footer .text h3{
+              font-family: 'Roboto',sans-serif;
+              font-size: 36px;
+              font-style: normal;
+              font-weight: 700;
+              margin-top: -1em;
+       }
+       .footer .text p{
+              text-align: center;
+              font-family: 'Roboto',sans-serif;
+              font-weight: 700;
+              font-size: 24px;
+       }
+
+       .social li{
+              list-style: none;
+              padding-right: 1em;
+              font-size: 25px;
+              cursor: pointer;
+       }
+       .social li img{
+              width: 35px;
+       }
+       /*----footer-end----*/
+
+
+
+
+       /*---responsive--mobile---*/
+       @media (max-width:667px){
+                     .chat {
+                            width: 383px;
+                            height: 225px;
+                            margin-left: 1em;
+                            display: flex;
+                            flex-direction: column;
+                            padding-bottom: 30px;
+                        }
+
+                        .box {
+                            grid-template-columns: 1fr;
+                            display: grid;
+                        }
+                        img.main {
+                            width: 90%;
+                            margin-top: 4em;
+                        }
+                        .circle {
+                            position: relative;
+                            left: 11em;
+                            top: -6em;
+                            width: 30%;
+                        }
+                        .box .textbx {
+                            transform: translateY(-10%);
+                        }
+                        nav{
+                               margin-top: 0em;
+                        }
+                        h1{
+                               font-size: 50px;
+                        }
+                        h2{
+                               display: flex;
+                               flex-direction: column;
+                        }
+                        header ul li a{
+                               font-size: 14px;
+                        }
+              }
+              /*---mobile-end---*/
+
+
+              /*----ipad-start----*/
+              @media (max-width:992px){
+                     .chat{
+                            margin-left: 0em !important;
+                            width: 100% !important;
+                     }
+                     .agency{
+                            display: grid;
+                            grid-template-columns: 1fr;
+                            margin-left: 0px;
+                            margin: 0px 20px;
+                     }
+                     .box{
+                            display: grid;
+                            grid-template-columns: 1fr;
+                     }
+                     .box .textbx{
+                            transform: translateY(0%);
+                     }
+                     header ul li a{
+                            font-size: 16px;
+                     }
+              }
+              /*----ipad-end-----*/
