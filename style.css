@@ -8,6 +8,21 @@ body{
        box-sizing: border-box;
 }
 
+::-webkit-scrollbar{
+       width:15px;
+       height: 5px;
+
+}
+::-webkit-scrollbar-track{
+       background:red;
+       border-radius: 10px;
+}
+::-webkit-scrollbar-thumb{
+       background: gray;
+       border-radius: 10px;
+
+}
+
 .container{
        max-width: 1440px;
        position: relative;
@@ -228,6 +243,10 @@ header ul li a:hover{
               padding-right: 1em;
               font-size: 25px;
               cursor: pointer;
+              transition: 0.5s;
+       }
+       .social li:hover{
+              transform: translateY(-10px);
        }
        .social li img{
               width: 35px;
